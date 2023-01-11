@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Authentication</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account_login"><u>Already have an account? login</u></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_new_account"><u>Create new account</u></string>
+    <string name="sign_out">Sign out</string>
+    <string name="welcome_to_home_screen">Welcome to Home screen</string>
+    <string name="text">Here is your email and uid it\'s from Firebase database.</string>
+    <string name="view_now"><u>view now</u></string>
+</resources>

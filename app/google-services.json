@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1082506016635",
+    "project_id": "authentication-material-ui",
+    "storage_bucket": "authentication-material-ui.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082506016635:android:24381d456f0a1373b8afde",
+        "android_client_info": {
+          "package_name": "com.example.authentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082506016635-gtdnhtmmf4jascsnapo15ml222plk04u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFokGxB6fqdQ3PzjB-f7j8tSSqgW_s7Fo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1082506016635-gtdnhtmmf4jascsnapo15ml222plk04u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

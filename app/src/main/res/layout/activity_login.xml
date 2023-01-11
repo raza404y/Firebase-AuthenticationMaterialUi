@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:animateLayoutChanges="true"
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:background="@drawable/view_bg"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageview"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="@dimen/_95sdp"
+                android:background="@drawable/img_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/download"
+                android:layout_gravity="center"
+                />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:boxBackgroundMode="filled"
+                app:boxBackgroundColor="@null"
+                android:id="@+id/emailEt"
+                app:errorEnabled="true"
+                app:errorTextColor="@color/orange"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/_22sdp"
+                    android:importantForAutofill="no"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                app:boxBackgroundMode="filled"
+                app:boxBackgroundColor="@null"
+                app:errorEnabled="true"
+                app:counterEnabled="true"
+                app:counterOverflowTextAppearance="@color/orange"
+                app:counterMaxLength="30"
+                app:passwordToggleEnabled="true"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="start"
+                    android:hint="@string/password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingTop="@dimen/_22sdp"
+                    android:paddingEnd="@dimen/_2sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_44sdp"
+                    app:cornerRadius="20dp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:text="@string/login"
+                    android:layout_marginBottom="@dimen/_18sdp"
+                    android:backgroundTint="@color/orange"
+                    />
+
+            </FrameLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/CreateNewAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/create_new_account"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:padding="@dimen/_9sdp"
+                android:textSize="@dimen/_12ssp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
